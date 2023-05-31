@@ -1,0 +1,31 @@
+{
+    "name": "python-code-snippets",
+    "displayName": "Python Code Snippets",
+    "description": "Code snippets for Python.",
+    "version": "1.0.2",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "publisher": "ExtensionCreator",
+    "icon": "logo.png",
+    "categories": [
+        "Snippets",
+        "Programming Languages",
+        "Other"
+    ],
+    "bugs": {
+		"url": "https://github.com/ExtesnionCreator/PythonCodeSnippets/issues"
+	},
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/python.code-snippets"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ExtensionCreator/PythonCodeSnippets"
+    }
+}
