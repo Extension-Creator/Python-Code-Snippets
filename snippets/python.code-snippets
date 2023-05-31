@@ -1,1 +1,1280 @@
-
+{
+    "abs()": {
+        "prefix": "abs()",
+        "body": "abs(${1:num})",
+        "description": [
+            "Syntax:",
+            "abs(num)"
+        ]
+    },
+    "any()": {
+        "prefix": "any()",
+        "body": "any(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "any(iterable)"
+        ]
+    },
+    "all()": {
+        "prefix": "all()",
+        "body": "all(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "all(iterable)"
+        ]
+    },
+    "ascii()": {
+        "prefix": "ascii()",
+        "body": "ascii(${1:object})",
+        "description": [
+            "Syntax:",
+            "ascii(object)"
+        ]
+    },
+    "bin()": {
+        "prefix": "bin()",
+        "body": "bin(${1:num})",
+        "description": [
+            "Syntax:",
+            "bin(num)"
+        ]
+    },
+    "bool()": {
+        "prefix": "bool()",
+        "body": "bool(${1:value})",
+        "description": [
+            "Syntax:",
+            "bool([value])"
+        ]
+    },
+    "bytearray()": {
+        "prefix": "bytearray()",
+        "body": "bytearray(${1:value})",
+        "description": [
+            "Syntax:",
+            "bytearray([source[, encoding[, errors]]])"
+        ]
+    },
+    "callable()": {
+        "prefix": "callable()",
+        "body": "callable(${1:object})",
+        "description": [
+            "Syntax:",
+            "callable(object)"
+        ]
+    },
+    "bytes()": {
+        "prefix": "bytes()",
+        "body": "bytes(${1:value})",
+        "description": [
+            "Syntax:",
+            "bytes([source[, encoding[, errors]]])"
+        ]
+    },
+    "chr()": {
+        "prefix": "chr()",
+        "body": "chr(${1:integer})",
+        "description": [
+            "Syntax:",
+            "chr(integer)"
+        ]
+    },
+    "compile()": {
+        "prefix": "compile()",
+        "body": "compile(${1:source}, ${2:filename}, ${3:mode})",
+        "description": [
+            "Syntax:",
+            "compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)"
+        ]
+    },
+    "classmethod()": {
+        "prefix": "classmethod()",
+        "body": "classmethod(${1:function})",
+        "description": [
+            "Syntax:",
+            "classmethod(function)"
+        ]
+    },
+    "complex()": {
+        "prefix": "complex()",
+        "body": "complex(${1:})",
+        "description": [
+            "Syntax:",
+            "complex([real[, imag]])"
+        ]
+    },
+    "delattr()": {
+        "prefix": "delattr()",
+        "body": "delattr(${1:object}, ${2:name})",
+        "description": [
+            "Syntax:",
+            "delattr(object, name)"
+        ]
+    },
+    "dict()": {
+        "prefix": "dict()",
+        "body": "dict(${1:})",
+        "description": [
+            "Syntax:",
+            "class dict(**kwarg)",
+            "class dict(mapping, **kwarg)",
+            "class dict(iterable, **kwarg)"
+        ]
+    },
+    "dir()": {
+        "prefix": "dir()",
+        "body": "dir(${1:object})",
+        "description": [
+            "Syntax:",
+            "dir([object])"
+        ]
+    },
+    "divmod()": {
+        "prefix": "divmod()",
+        "body": "divmod(${1:x}, ${2:y})",
+        "description": [
+            "Syntax:",
+            "divmod(x, y)"
+        ]
+    },
+    "enumerate()": {
+        "prefix": "enumerate()",
+        "body": "enumerate(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "enumerate(iterable, start=0)"
+        ]
+    },
+    "staticmethod()": {
+        "prefix": "staticmethod()",
+        "body": "staticmethod(${1:function})",
+        "description": [
+            "Syntax:",
+            "staticmethod(function)"
+        ]
+    },
+    "filter()": {
+        "prefix": "filter()",
+        "body": "filter(${1:function}, ${2:iterable})",
+        "description": [
+            "Syntax:",
+            "filter(function, iterable)"
+        ]
+    },
+    "eval()": {
+        "prefix": "eval()",
+        "body": "eval(${1:expression})",
+        "description": [
+            "Syntax:",
+            "eval(expression, globals=None, locals=None)"
+        ]
+    },
+    "float()": {
+        "prefix": "float()",
+        "body": "float(${1:x})",
+        "description": [
+            "Syntax:",
+            "float([x])"
+        ]
+    },
+    "format()": {
+        "prefix": "format()",
+        "body": "format(${1:})",
+        "description": [
+            "Syntax:",
+            "format(value[, format_spec])",
+            "string.format(p0, p1, ..., k0=v0, k1=v1, ...) # String Method"
+        ]
+    },
+    "frozenset()": {
+        "prefix": "frozenset()",
+        "body": "frozenset(${1:})",
+        "description": [
+            "Syntax:",
+            "frozenset([iterable])",
+            "set.frozenset([iterable]) # Set Method"
+        ]
+    },
+    "getattr()": {
+        "prefix": "getattr()",
+        "body": "getattr(${1:object}, ${2:name})",
+        "description": [
+            "Syntax:",
+            "getattr(object, name[, default])"
+        ]
+    },
+    "globals()": {
+        "prefix": "globals()",
+        "body": "globals()",
+        "description": [
+            "Syntax:",
+            "globals()"
+        ]
+    },
+    "exec()": {
+        "prefix": "exec()",
+        "body": "exec(${1:object})",
+        "description": [
+            "Syntax:",
+            "exec(object, globals, locals)"
+        ]
+    },
+    "hasattr()": {
+        "prefix": "hasattr()",
+        "body": "hasattr(${1:object}, ${2:name})",
+        "description": [
+            "Syntax:",
+            "hasattr(object, name)"
+        ]
+    },
+    "help()": {
+        "prefix": "help()",
+        "body": "help(${1:object})",
+        "description": [
+            "Syntax:",
+            "help(object)"
+        ]
+    },
+    "hex()": {
+        "prefix": "hex()",
+        "body": "hex(${1:x})",
+        "description": [
+            "Syntax:",
+            "hex(x)"
+        ]
+    },
+    "hash()": {
+        "prefix": "hash()",
+        "body": "hash(${1:object})",
+        "description": [
+            "Syntax:",
+            "hash(object)"
+        ]
+    },
+    "input()": {
+        "prefix": "input()",
+        "body": "input(${1:prompt})",
+        "description": [
+            "Syntax:",
+            "input([prompt])"
+        ]
+    },
+    "id()": {
+        "prefix": "id()",
+        "body": "id(${1:object})",
+        "description": [
+            "Syntax:",
+            "id(object)"
+        ]
+    },
+    "isinstance()": {
+        "prefix": "isinstance()",
+        "body": "isinstance(${1:object}, ${2:classinfo})",
+        "description": [
+            "Syntax:",
+            "isinstance(object, classinfo)"
+        ]
+    },
+    "int()": {
+        "prefix": "int()",
+        "body": "int(${1:x})",
+        "description": [
+            "Syntax:",
+            "int(x=0, base=10)"
+        ]
+    },
+    "issubclass()": {
+        "prefix": "issubclass()",
+        "body": "issubclass(${1:class}, ${2:classinfo})",
+        "description": [
+            "Syntax:",
+            "issubclass(class, classinfo)"
+        ]
+    },
+    "iter()": {
+        "prefix": "iter()",
+        "body": "iter(${1:object})",
+        "description": [
+            "Syntax:",
+            "iter(object, sentinel)"
+        ]
+    },
+    "list()": {
+        "prefix": "list()",
+        "body": "list(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "list([iterable])"
+        ]
+    },
+    "locals()": {
+        "prefix": "locals()",
+        "body": "locals()",
+        "description": [
+            "Syntax:",
+            "locals()"
+        ]
+    },
+    "len()": {
+        "prefix": "len()",
+        "body": "len(${1:s})",
+        "description": [
+            "Syntax:",
+            "len(s)"
+        ]
+    },
+    "max()": {
+        "prefix": "max()",
+        "body": "max(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "# to find the largest item in an iterable",
+            "max(iterable, *iterables, key, default)",
+            
+            "# to find the largest item between two or more objects",
+            "max(arg1, arg2, *args, key)"
+        ]
+    },
+    "min()": {
+        "prefix": "min()",
+        "body": "min(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "# to find the smallest item in an iterable",
+            "min(iterable, *iterables, key, default)",
+            
+            "# to find the smallest item between two or more objects",
+            "min(arg1, arg2, *args, key)"
+        ]
+    },
+    "map()": {
+        "prefix": "map()",
+        "body": "map(${1:function}, ${2:iterable})",
+        "description": [
+            "Syntax:",
+            "map(function, iterable, ...)"
+        ]
+    },
+    "next()": {
+        "prefix": "next()",
+        "body": "next(${1:iterator})",
+        "description": [
+            "Syntax:",
+            "next(iterator, default)"
+        ]
+    },
+    "memoryview()": {
+        "prefix": "memoryview()",
+        "body": "memoryview(${1:obj})",
+        "description": [
+            "Syntax:",
+            "memoryview(obj)"
+        ]
+    },
+    "object()": {
+        "prefix": "object()",
+        "body": "object()",
+        "description": [
+            "Syntax:",
+            "o = object()"
+        ]
+    },
+    "oct()": {
+        "prefix": "oct()",
+        "body": "oct(${1:x})",
+        "description": [
+            "Syntax:",
+            "oct(x)"
+        ]
+    },
+    "ord()": {
+        "prefix": "ord()",
+        "body": "ord(${1:ch})",
+        "description": [
+            "Syntax:",
+            "ord(ch)"
+        ]
+    },
+    "open()": {
+        "prefix": "open()",
+        "body": "open(${1:file})",
+        "description": [
+            "Syntax:",
+            "open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)"
+        ]
+    },
+    "pow()": {
+        "prefix": "pow()",
+        "body": "pow(${1:x}, ${2:y})",
+        "description": [
+            "Syntax:",
+            "pow(x, y, z)"
+        ]
+    },
+    "print()": {
+        "prefix": "print()",
+        "body": "print(${1:string})",
+        "description": [
+            "Syntax:",
+            "print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)"
+        ]
+    },
+    "property()": {
+        "prefix": "property()",
+        "body": "property(${1:object})",
+        "description": [
+            "Syntax:",
+            "property(fget=None, fset=None, fdel=None, doc=None)"
+        ]
+    },
+    "range()": {
+        "prefix": "range()",
+        "body": "range(${1:num})",
+        "description": [
+            "Syntax:",
+            "range(stop)",
+            "range(start, stop[, step])"
+        ]
+    },
+    "repr()": {
+        "prefix": "repr()",
+        "body": "repr(${1:obj})",
+        "description": [
+            "Syntax:",
+            "repr(obj)"
+        ]
+    },
+    "reversed()": {
+        "prefix": "reversed()",
+        "body": "reversed(${1:seq})",
+        "description": [
+            "Syntax:",
+            "reversed(seq)"
+        ]
+    },
+    "round()": {
+        "prefix": "round()",
+        "body": "round(${1:num})",
+        "description": [
+            "Syntax:",
+            "round(number, ndigits)"
+        ]
+    },
+    "set()": {
+        "prefix": "set()",
+        "body": "set(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "set(iterable)"
+        ]
+    },
+    "setattr()": {
+        "prefix": "setattr()",
+        "body": "setattr(${1:object}, ${2:name}, ${3:value})",
+        "description": [
+            "Syntax:",
+            "setattr(object, name, value)"
+        ]
+    },
+    "slice()": {
+        "prefix": "slice()",
+        "body": "slice(${1:num})",
+        "description": [
+            "Syntax:",
+            "slice(start, stop, step)"
+        ]
+    },
+    "sorted()": {
+        "prefix": "sorted()",
+        "body": "sorted(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "sorted(iterable, key=None, reverse=False)"
+        ]
+    },
+    "str()": {
+        "prefix": "str()",
+        "body": "str(${1:object})",
+        "description": [
+            "Syntax:",
+            "str(object, encoding='utf-8', errors='strict')"
+        ]
+    },
+    "sum()": {
+        "prefix": "sum()",
+        "body": "sum(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "sum(iterable, start)"
+        ]
+    },
+    "tuple()": {
+        "prefix": "tuple()",
+        "body": "tuple(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "tuple(iterable)"
+        ]
+    },
+    "type()": {
+        "prefix": "type()",
+        "body": "type(${1:object})",
+        "description": [
+            "Syntax:",
+            "type(object)",
+            "type(name, bases, dict)"
+        ]
+    },
+    "vars()": {
+        "prefix": "vars(object)",
+        "body": "vars(${1:object})",
+        "description": [
+            "Syntax:",
+            "vars(object)"
+        ]
+    },
+    "zip()": {
+        "prefix": "zip()",
+        "body": "zip(${1:iterables})",
+        "description": [
+            "Syntax:",
+            "zip(*iterables)"
+        ]
+    },
+    "__import__()": {
+        "prefix": "__import__()",
+        "body": "__import__(${1:name}, ${2:globals}, ${3:fromlist}, ${4:level})",
+        "description": [
+            "Syntax:",
+            "__import__(name, globals=None, locals=None, fromlist=(), level=0)"
+        ]
+    },
+    "super()": {
+        "prefix": "super()",
+        "body": "super().__init__(${1:object})",
+        "description": [
+            "Syntax:",
+            "super(object)"
+        ]
+    },
+    "clear()": {
+        "prefix": "clear()",
+        "body": "clear()",
+        "description": [
+            "Syntax:",
+            "dict.clear() # Dictionary Method",
+            "list.clear() # List Method",
+            "set.clear() # Set Method"
+        ]
+    },
+    "copy()": {
+        "prefix": "copy()",
+        "body": "copy()",
+        "description": [
+            "Syntax:",
+            "dict.copy() # Dictionary Method",
+            "list.copy() # List Method",
+            "set.copy() # Set Method"
+        ]
+    },
+    "fromkeys()": {
+        "prefix": "fromkeys()",
+        "body": "fromkeys(${1:sequence})",
+        "description": [
+            "Syntax:",
+            "dict.fromkeys(sequence[, value]) # Dictionary Method"
+        ]
+    },
+    "get()": {
+        "prefix": "get()",
+        "body": "get(${1:key})",
+        "description": [
+            "Syntax:",
+            "dict.get(key[, value]) # Dictionary Method"
+        ]
+    },
+    "items()": {
+        "prefix": "items()",
+        "body": "items()",
+        "description": [
+            "Syntax:",
+            "dict.items() # Dictionary Method"
+        ]
+    },
+    "keys()": {
+        "prefix": "keys()",
+        "body": "keys()",
+        "description": [
+            "Syntax:",
+            "dict.keys() # Dictionary Method"
+        ]
+    },
+    "popitem()": {
+        "prefix": "popitem()",
+        "body": "popitem()",
+        "description": [
+            "Syntax:",
+            "dict.popitem() # Dictionary Method"
+        ]
+    },
+    "setdefault()": {
+        "prefix": "setdefault()",
+        "body": "setdefault(${1:key})",
+        "description": [
+            "Syntax:",
+            "dict.setdefault(key[, default_value]) # Dictionary Method"
+        ]
+    },
+    "pop()": {
+        "prefix": "pop()",
+        "body": "pop(${1:})",
+        "description": [
+            "Syntax:",
+            "dict.pop(key[, default]) # Dictionary Method",
+            "list.pop(index) # List Method",
+            "set.pop() # Set Method"
+        ]
+    },
+    "values()": {
+        "prefix": "values()",
+        "body": "values()",
+        "description": [
+            "Syntax:",
+            "dict.values() # Dictionary Method"
+        ]
+    },
+    "update()": {
+        "prefix": "update()",
+        "body": "update(${1:})",
+        "description": [
+            "Syntax:",
+            "dict.update([other]) # Dictionary Method",
+            "set.update(iterable) # Set Method"
+        ]
+    },
+    "append()": {
+        "prefix": "append()",
+        "body": "append(${1:item})",
+        "description": [
+            "Syntax:",
+            "list.append(item) # List Method"
+        ]
+    },
+    "extend()": {
+        "prefix": "extend()",
+        "body": "extend(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "list.extend(iterable) # List Method"
+        ]
+    },
+    "insert()": {
+        "prefix": "insert()",
+        "body": "insert(${1:i}, ${2:element})",
+        "description": [
+            "Syntax:",
+            "list.insert(i, elem) # List Method"
+        ]
+    },
+    "remove()": {
+        "prefix": "remove()",
+        "body": "remove(${1:element})",
+        "description": [
+            "Syntax:",
+            "list.remove(element) # List Method",
+            "set.remove(element) # Set Method"
+        ]
+    },
+    "index()": {
+        "prefix": "index()",
+        "body": "index(${1:})",
+        "description": [
+            "Syntax:",
+            "list.index(element, start, end) # List Method",
+            "string.index(sub[, start[, end]]) # String Method",
+            "tuple.index(element, start, end) # Tuple Method"
+        ]
+    },
+    "count()": {
+        "prefix": "count()",
+        "body": "count(${1:})",
+        "description": [
+            "Syntax:",
+            "list.count(element) # List Method",
+            "string.count(substring, start=..., end=...) # String Method",
+            "tuple.count(element) # Tuple Method"
+        ]
+    },
+    "reverse()": {
+        "prefix": "reverse()",
+        "body": "reverse()",
+        "description": [
+            "Syntax:",
+            "list.reverse(num) # List Method"
+        ]
+    },
+    "sort()": {
+        "prefix": "sort()",
+        "body": "sort(${1:})",
+        "description": [
+            "Syntax:",
+            "list.sort(key=..., reverse=...) # List Method"
+        ]
+    },
+    "add()": {
+        "prefix": "add()",
+        "body": "add(${1:elem})",
+        "description": [
+            "Syntax:",
+            "set.add(elem) # Set Method"
+        ]
+    },
+    "difference()": {
+        "prefix": "difference()",
+        "body": "difference(${1:set})",
+        "description": [
+            "Syntax:",
+            "set.difference(set1) # Set Method"
+        ]
+    },
+    "difference_update()": {
+        "prefix": "difference_update()",
+        "body": "difference_update(${1:set})",
+        "description": [
+            "Syntax:",
+            "set.difference_update(set1) # Set Method"
+        ]
+    },
+    "discard()": {
+        "prefix": "discard()",
+        "body": "discard(${1:x})",
+        "description": [
+            "Syntax:",
+            "set.discard(x) # Set Method"
+        ]
+    },
+    "intersection()": {
+        "prefix": "intersection()",
+        "body": "intersection(${1:other_sets})",
+        "description": [
+            "Syntax:",
+            "set.intersection(*other_sets) # Set Method"
+        ]
+    },
+    "intersection_update()": {
+        "prefix": "intersection_update()",
+        "body": "intersection_update(${1:other_sets})",
+        "description": [
+            "Syntax:",
+            "set.intersection_update(*other_sets) # Set Method"
+        ]
+    },
+    "isdisjoint()": {
+        "prefix": "isdisjoint()",
+        "body": "isdisjoint(${1:set})",
+        "description": [
+            "Syntax:",
+            "set.isdisjoint(set1) # Set Method"
+        ]
+    },
+    "issubset()": {
+        "prefix": "issubset()",
+        "body": "issubset(${1:set})",
+        "description": [
+            "Syntax:",
+            "set.issubset(set1) # Set Method"
+        ]
+    },
+    "issuperset()": {
+        "prefix": "issuperset()",
+        "body": "issuperset(${1:set})",
+        "description": [
+            "Syntax:",
+            "set.issuperset(set1) # Set Method"
+        ]
+    },
+    "symmetric_difference()": {
+        "prefix": "symmetric_difference()",
+        "body": "symmetric_difference(${1:set})",
+        "description": [
+            "Syntax:",
+            "set.symmetric_difference(set1) # Set Method"
+        ]
+    },
+    "symmetric_difference_update()": {
+        "prefix": "symmetric_differnece_update()",
+        "body": "symmetric_difference_update(${1:set})",
+        "description": [
+            "Syntax:",
+            "set.symmetric_differnece_update(set1) # Set Method"
+        ]
+    },
+    "union()": {
+        "prefix": "union()",
+        "body": "union(${1:other_sets})",
+        "description": [
+            "Syntax:",
+            "set.union(*other_sets)"
+        ]
+    },
+    "capitalize()": {
+        "prefix": "capitalize()",
+        "body": "capitalize()",
+        "description": [
+            "Syntax:",
+            "string.capitalize() # String Method"
+        ]
+    },
+    "center()": {
+        "prefix": "center()",
+        "body": "center(${1:width})",
+        "description": [
+            "Syntax:",
+            "string.center(width[, fillchar]) # String Method"
+        ]
+    },
+    "casefold()": {
+        "prefix": "casefold()",
+        "body": "casefold()",
+        "description": [
+            "Syntax:",
+            "string.casefold() # String Method"
+        ]
+    },
+    "endswith()": {
+        "prefix": "endswith()",
+        "body": "endswith(${1:suffix})",
+        "description": [
+            "Syntax:",
+            "string.endswith(suffix[, start[, end]])"
+        ]
+    },
+    "expandtabs()": {
+        "prefix": "expandtabs()",
+        "body": "expandtabs(${1:tabsize})",
+        "description": [
+            "Syntax:",
+            "string.expandtabs(tabsize) # String Method"
+        ]
+    },
+    "encode()": {
+        "prefix": "encode()",
+        "body": "encode(${1:})",
+        "description": [
+            "Syntax:",
+            "string.encode(encoding='UTF-8', errors='strict') # String Method"
+        ]
+    },
+    "find()": {
+        "prefix": "find()",
+        "body": "find(${1:substring})",
+        "description": [
+            "Syntax:",
+            "string.find(sub[, start[, end]]) # String Method"
+        ]
+    },
+    "isalnum()": {
+        "prefix": "isalmun()",
+        "body": "isalnum()",
+        "description": [
+            "Syntax:",
+            "string.isalnum() # String Method"
+        ]
+    },
+    "isalpha()": {
+        "prefix": "isalpha()",
+        "body": "isalpha()",
+        "description": [
+            "Syntax:",
+            "string.isalpha() # String Method"
+        ]
+    },
+    "isdecimal()": {
+        "prefix": "isdecimal()",
+        "body": "isdecimal()",
+        "description": [
+            "Syntax:",
+            "string.isdecimal() # String Method"
+        ]
+    },
+    "isdigit()": {
+        "prefix": "isdigit()",
+        "body": "isdigit()",
+        "description": [
+            "Syntax:",
+            "string.isdigit() # String Method"
+        ]
+    },
+    "isidentifier()": {
+        "prefix": "isidentifier()",
+        "body": "isidentifier()",
+        "description": [
+            "Syntax:",
+            "string.isidentifier() # String Method"
+        ]
+    },
+    "islower()": {
+        "prefix": "islower()",
+        "body": "islower()",
+        "description": [
+            "Syntax:",
+            "string.islower() # String Method"
+        ]
+    },
+    "isnumeric()": {
+        "prefix": "isnumeric()",
+        "body": "isnumeric()",
+        "description": [
+            "Syntax:",
+            "string.isnumeric() # String Method"
+        ]
+    },
+    "isprintable()": {
+        "prefix": "isprintable()",
+        "body": "isprintable()",
+        "description": [
+            "Syntax:",
+            "string.isprintable() # String Method"
+        ]
+    },
+    "isspace()": {
+        "prefix": "isspace()",
+        "body": "isspace()",
+        "description": [
+            "Syntax:",
+            "string.isspace() # String Method"
+        ]
+    },
+    "istitle()": {
+        "prefix": "istitle()",
+        "body": "istitle()",
+        "description": [
+            "Syntax:",
+            "string.istitle() # String Method"
+        ]
+    },
+    "isupper()": {
+        "prefix": "isupper()",
+        "body": "isupper()",
+        "description": [
+            "Syntax:",
+            "string.isupper() # String Method"
+        ]
+    },
+    "join()": {
+        "prefix": "join()",
+        "body": "join(${1:iterable})",
+        "description": [
+            "Syntax:",
+            "string.join(iterable) # String Method"
+        ]
+    },
+    "ljust()": {
+        "prefix": "ljust()",
+        "body": "ljust(${1:width})",
+        "description": [
+            "Syntax:",
+            "string.ljust(width[, fillchar]) # String Method"
+        ]
+    },
+    "rjust()": {
+        "prefix": "rjust()",
+        "body": "rjust(${1:width})",
+        "description": [
+            "Syntax:",
+            "string.rjust(width[, fillchar]) # String Method"
+        ]
+    },
+    "lower()": {
+        "prefix": "lower()",
+        "body": "lower()",
+        "description": [
+            "Syntax:",
+            "string.lower() # String Method"
+        ]
+    },
+    "upper()": {
+        "prefix": "upper()",
+        "body": "upper()",
+        "description": [
+            "Syntax:",
+            "string.upper() # String Method"
+        ]
+    },
+    "swapcase()": {
+        "prefix": "swapcase()",
+        "body": "swapcase()",
+        "description": [
+            "Syntax:",
+            "string.swapcase() # String Method"
+        ]
+    },
+    "lstrip()": {
+        "prefix": "lstrip()",
+        "body": "lstrip(${1:})",
+        "description": [
+            "Syntax:",
+            "string.lstrip([chars]) # String Method"
+        ]
+    },
+    "rstrip()": {
+        "prefix": "rstrip()",
+        "body": "rstrip(${1:})",
+        "description": [
+            "Syntax:",
+            "string.rstrip([chars]) # String Method"
+        ]
+    },
+    "strip()": {
+        "prefix": "strip()",
+        "body": "strip(${1:})",
+        "description": [
+            "Syntax:",
+            "string.strip([chars]) # String Method"
+        ]
+    },
+    "partition()": {
+        "prefix": "partition()",
+        "body": "partition(${1:separator})",
+        "description": [
+            "Syntax:",
+            "string.partition(separator) # String Method"
+        ]
+    },
+    "maketrans()": {
+        "prefix": "maketrans()",
+        "body": "maketrans(${1:})",
+        "description": [
+            "Syntax:",
+            "string.maketrans(x[, y[, z]]) # String Method"
+        ]
+    },
+    "rpartition()": {
+        "prefix": "rpartition()",
+        "body": "rpartition(${1:separator})",
+        "description": [
+            "Syntax:",
+            "string.rpartition(separator) # String Method"
+        ]
+    },
+    "translate()": {
+        "prefix": "translate()",
+        "body": "translate(${1:table})",
+        "description": [
+            "Syntax:",
+            "string.translate(table) # String Method"
+        ]
+    },
+    "replace()": {
+        "prefix": "replace()",
+        "body": "replace(${1:old}, ${2:new})",
+        "description": [
+            "Syntax:",
+            "string.replace(old, new [, count]) # String Method"
+        ]
+    },
+    "rfind()": {
+        "prefix": "rfind()",
+        "body": "rfind(${1:sub})",
+        "description": [
+            "Syntax:",
+            "string.rfind(sub[, start[, end]]) # String Method"
+        ]
+    },
+    "rindex()": {
+        "prefix": "rindex()",
+        "body": "rindex(${1:sub})",
+        "description": [
+            "Syntax:",
+            "string.rindex(sub[, start[, end]]) # String Method"
+        ]
+    },
+    "split()": {
+        "prefix": "split()",
+        "body": "split(${1:})",
+        "description": [
+            "Syntax:",
+            "string.split([separator [, maxsplit]]) # String Method"
+        ]
+    },
+    "rsplit()": {
+        "prefix": "rsplit()",
+        "body": "rsplit(${1:})",
+        "description": [
+            "Syntax:",
+            "string.rsplit([separator [, maxsplit]]) # String Method"
+        ]
+    },
+    "splitlines()": {
+        "prefix": "splitlines()",
+        "body": "splitlines(${1:})",
+        "description": [
+            "Syntax:",
+            "string.splitlines([keepends]) # String Method"
+        ]
+    },
+    "startswith()": {
+        "prefix": "startswith()",
+        "body": "startswith(${1:prefix})",
+        "description": [
+            "Syntax:",
+            "string.startswith(prefix[, start[, end]]) # String Method"
+        ]
+    },
+    "title()": {
+        "prefix": "title()",
+        "body": "title()",
+        "description": [
+            "Syntax:",
+            "string.title() # String Method"
+        ]
+    },
+    "zfill()": {
+        "prefix": "zfill()",
+        "body": "zfill(${1:width})",
+        "description": [
+            "Syntax:",
+            "string.zfill(width) # String Method"
+        ]
+    },
+    "False": {
+        "prefix": "False",
+        "body": "False",
+    },
+    "True": {
+        "prefix": "True",
+        "body": "True"
+    },
+    "None": {
+        "prefix": "None",
+        "body": "None",
+    },
+    "and": {
+        "prefix": "and",
+        "body": "and ",
+    },
+    "as": {
+        "prefix": "as",
+        "body": "as ",
+    },
+    "assert": {
+        "prefix": "assert",
+        "body": "assert ",
+    },
+    "async": {
+        "prefix": "async",
+        "body": "async ",
+    },
+    "await": {
+        "prefix": "await",
+        "body": "await ",
+    },
+    "break": {
+        "prefix": "break",
+        "body": "break",
+    },
+    "class": {
+        "prefix": "class",
+        "body": "class ",
+    },
+    "continue": {
+        "prefix": "continue",
+        "body": "continue",
+    },
+    "def": {
+        "prefix": "def",
+        "body": "def ",
+    },
+    "del": {
+        "prefix": "del",
+        "body": "del ",
+    },
+    "elif": {
+        "prefix": "elif",
+        "body": "elif",
+    },
+    "else": {
+        "prefix": "else",
+        "body": "else:",
+    },
+    "except": {
+        "prefix": "except",
+        "body": "except",
+    },
+    "finally": {
+        "prefix": "finally",
+        "body": "finally",
+    },
+    "for": {
+        "prefix": "for",
+        "body": "for",
+    },
+    "from": {
+        "prefix": "from",
+        "body": "from",
+    },
+    "global": {
+        "prefix": "global",
+        "body": "global",
+    },
+    "if": {
+        "prefix": "if",
+        "body": "if",
+    },
+    "import": {
+        "prefix": "import",
+        "body": "import",
+    },
+    "in": {
+        "prefix": "in",
+        "body": "in",
+    },
+    "is": {
+        "prefix": "is",
+        "body": "is",
+    },
+    "lambda": {
+        "prefix": "lambda",
+        "body": "lambda",
+    },
+    "nonlocal": {
+        "prefix": "nonlocal",
+        "body": "nonlocal",
+    },
+    "not": {
+        "prefix": "not",
+        "body": "not",
+    },
+    "or": {
+        "prefix": "or",
+        "body": "or",
+    },
+    "pass": {
+        "prefix": "pass",
+        "body": "pass",
+    },
+    "raise": {
+        "prefix": "raise",
+        "body": "raise",
+    },
+    "return": {
+        "prefix": "return",
+        "body": "return",
+    },
+    "try": {
+        "prefix": "try",
+        "body": "try",
+    },
+    "while": {
+        "prefix": "while",
+        "body": "while",
+    },
+    "with": {
+        "prefix": "with",
+        "body": "with",
+    },
+    "yield": {
+        "prefix": "yield",
+        "body": "yield",
+    },
+}
